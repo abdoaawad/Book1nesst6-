@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookNest6</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff;
+            color: #333;
+        }
+
+        header {
+            background-color: #000;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        footer {
+            background-color: #000;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+
+        section {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .book, .cart-item {
+            margin: 15px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            display: inline-block;
+            text-align: center;
+        }
+
+        button {
+            background-color: red;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #000;
+        }
+    </style>
+</head>
+<body>
+    <!-- الصفحة الرئيسية (عن الموقع) -->
+    <header>
+        <div class="logo">
+            <h1>BookNest6</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">الرئيسية</a></li>
+                <li><a href="#books">الكتب</a></li>
+                <li><a href="#cart">سلة المشتريات</a></li>
+                <li><a href="#support">الدعم الفني</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- الصفحة الأولى: عن الموقع -->
+    <section id="home" class="about">
+        <h2>عن الموقع</h2>
+        <p>موقع BookNest6 هو المكان المثالي لعشاق الكتب والقصص ذاتية الرأي. نقدم لك مجموعة من الكتب التي تلامس مشاعرك وتفتح أمامك آفاق التفكير الشخصي.</p>
+    </section>
+
+    <!-- الصفحة الثانية: الكتب -->
+    <section id="books" class="books">
+        <h2>الكتب المتاحة للشراء</h2>
+        <div class="book">
+            <img src="https://via.placeholder.com/150" alt="كتاب 1">
+            <p>اسم الكتاب 1</p>
+            <p>سعر الكتاب: 100 جنيه</p>
+            <button>إضافة إلى السلة</button>
+        </div>
+        <div class="book">
+            <img src="https://via.placeholder.com/150" alt="كتاب 2">
+            <p>اسم الكتاب 2</p>
+            <p>سعر الكتاب: 120 جنيه</p>
+            <button>إضافة إلى السلة</button>
+        </div>
+    </section>
+
+    <!-- الصفحة الثالثة: سلة المشتريات -->
+    <section id="cart" class="cart">
+        <h2>سلة المشتريات</h2>
+        <div class="cart-item">
+            <p>اسم الكتاب 1</p>
+            <p>السعر: 100 جنيه</p>
+            <button>حذف</button>
+        </div>
+        <div class="cart-item">
+            <p>اسم الكتاب 2</p>
+            <p>السعر: 120 جنيه</p>
+            <button>حذف</button>
+        </div>
+        <p>الإجمالي: 220 جنيه</p>
+        <button>الدفع الإلكتروني</button>
+    </section>
+
+    <!-- الصفحة الرابعة: الدعم الفني -->
+    <section id="support" class="support">
+        <h2>الدعم الفني</h2>
+        <form>
+            <label for="name">الاسم:</label>
+            <input type="text" id="name" name="name">
+            
+            <label for="email">البريد الإلكتروني:</label>
+            <input type="email" id="email" name="email">
+            
+            <label for="message">الاستفسار:</label>
+            <textarea id="message" name="message"></textarea>
+
+            <button type="submit">إرسال</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 BookNest6. جميع الحقوق محفوظة.</p>
+    </footer>
+</body>
+</html>
